@@ -15,8 +15,7 @@ def get_dirlist():
     return page
 
 data = get_dirlist()
-HOST = ""
-PORT = 3000
+HOST, PORT = "", 3000
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, PORT))
